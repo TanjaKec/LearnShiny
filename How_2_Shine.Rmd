@@ -1,0 +1,256 @@
+---
+title: "How to Shiny? 🤩"
+author: "Tatjana Kecojevic"
+output:
+  xaringan::moon_reader:
+    css: ["default", "css/ohsu.css", "css/ohsu-fonts.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: atelier-lakeside-light
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+class: inverse, center, middle
+
+#Get Started 🤫😴
+
+<img src=https://media.giphy.com/media/mMSE6MfkXzLLa/giphy.gif align="middle" img width="90%">
+
+---
+class: inverse, center, middle
+
+#Let's Shiny with R 
+## 🌞😎🤩
+---
+
+##How does it work?
+```{r, out.width = "700px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/Shiny1.png")
+```
+---
+
+##There are two elements
+```{r, out.width = "700px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/Shiny2.png")
+```
+
+---
+##App Template
+```{r, out.width = "700px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/Shiny3.png")
+```
+---
+
+##Run & Stop
+```{r, out.width = "700px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/Shiny4.png")
+```
+
+---
+##Adding elements
+### as arguments to `fluidPage()`
+```{r, out.width = "700px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/Shiny4.1.png")
+```
+
+---
+##UI: Inputs & Outputs
+```{r, out.width = "700px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/Shiny5.png")
+```
+---
+
+##Adding elements *as arguments to `fluidPage()`*
+```{r, out.width = "400px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/Shiny5.1.png")
+```
+###Create an input with an input function
+```{r, out.width = "700px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/Shiny5.2.png")
+```
+---
+
+###Create an input with an input function
+.pull-left[
+**code**
+```{r, out.width = "700px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/Shiny5.3.1.png")
+```
+]
+
+.pull-right[
+**app**
+```{r, out.width = "900px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/Shiny5.3.2.png")
+```
+]
+---
+
+##Input Objects
+```{r, out.width = "700px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/Shiny6.png")
+```
+---
+
+##Syntax
+```{r, out.width = "1000px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/Shiny7.png")
+```
+
+<https://shiny.rstudio.com/reference/shiny/latest/selectInput.html>
+---
+
+##Output Objects
+```{r, out.width = "1000px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/Shiny8.png")
+```
+---
+
+###Output: plot 
+```{r, out.width = "600px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/Shiny10.png")
+```
+---
+
+###Remember 💡 
+```{r, out.width = "700px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/Shiny11.png")
+```
+---
+
+###<span style="color:red">3 Rules</span> to write the server function 😎 
+```{r, out.width = "750px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/Shiny12.png")
+```
+---
+
+###You can <span style="color:red">render*()</span> different types of output you wish to make.
+```{r, out.width = "750px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/Shiny13.png")
+```
+---
+
+###<span style="color:red">render*()</span>
+```{r, out.width = "750px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/Shiny14.png")
+```
+---
+
+```{r, out.width = "700px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/Shiny14.1.png")
+```
+---
+
+###Code
+```{r, out.width = "500px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/Shiny15.png")
+```
+---
+
+###The App
+```{r, out.width = "700px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/Shiny16.png")
+```
+<https://datateka.shinyapps.io/How2Shine/>
+---
+
+class: inverse, center, middle
+
+#Let's Look at the portal: 
+#[Open Data SR](https://data.gov.rs/sr/datasets/) 
+## 📑📊📈📉
+---
+
+class: inverse, middle
+
+#Example: [Подаци о саобраћајним незгодама за територију Града Београда](https://data.gov.rs/sr/datasets/podatsi-o-saobratshajnim-nezgodama-za-teritoriju-grada-beograda/)
+
+##[Подаци о саобраћајним незгодама до 28.02.2019. године за територију Града Београда](https://data.gov.rs/sr/datasets/r/7a10c1d4-3707-4c5a-93ca-b8e7baf77303) 
+
+### Note 💡: You should open and `File -> Save As...` data as a `csv` file!
+---
+class: inverse, center, middle
+
+# Access the RProject with the App
+Go to Tanja's GitHub and download `OpenDataPlay` repo by clicking on the green button `Clone or Download::Download ZIP`.
+
+<https://github.com/TanjaKec/OpenDataPlay>
+
+```{r, out.width = "500px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/GitHub1.png")
+```
+
+---
+# What is in the repo?
+
+After unzipping the downloaded file you should have the following in your directory, ie folder:
+
+```{r, out.width = "600px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/GitHub2.png")
+```
+---
+# How does it look like?
+
+- How many Input and Output Objects are there?
+
+- What does it do?
+
+```{r, out.width = "700px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/TrafficAccApp.png")
+```
+
+---
+# Let's open the app code
+
+Open the project with the App by clicking on `OpenDataPlay.Rproj` file.
+In the bottom left window click on `app.R` file.
+
+```{r, out.width = "700px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/Shiny17.png")
+```
+---
+# app.R
+
+The code has two parts:
+
+1) **global code**
+
+- uploading the packages; accessing and tailoring data 
+
+2) **app code**
+
+- remember app template! 🤔💡: user interface; server; running the app
+
+We can see the app in action ☀️😎 at <https://tatjana.shinyapps.io/TrafficAccidents/>
+
+---
+
+class: inverse, center, middle
+##Do the Cosmo Dance?! 🤪🎵🎶
+```{r, out.width = "500px", echo=FALSE}
+knitr::include_graphics("images/Cosmo_Dance.gif")
+```
+---
+class: center, middle
+
+##Thanks!
+
+To Yihui (ninja warrior) and RStudio for the [RMarkdown](https://bookdown.org/yihui/rmarkdown/) package::[xaringan](https://bookdown.org/yihui/rmarkdown/xaringan.html) package 
+
+
+```{r, out.width = "100px", echo=FALSE, fig.align = 'center'}
+knitr::include_graphics("images/yuhui_xie.png")
+```
+
+[www.sisteranalyst.org](https://sisteranalyst.org/) 
+
+@sisteranalyst
+
+@Tatjana_Kec
+
+
+Slides created via `R` package [**xaringan**](https://github.com/yihui/xaringan).
+
+The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
+
